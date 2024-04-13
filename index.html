@@ -1,15 +1,119 @@
 <html>
-    <body>
-        <h2>Enter Two Number To Opretion.</h2>
-        <script src="script.js"></script>
-        <input type="number" id="Number1" placeholder="Enter First Number" required>
-        <select id="opreter" onchange="allnumber()" >
-            <option value="+" >Addition</option>
-            <option value="-">Subtraction</option>
-            <option value="*" >Multiplication</option>
-            <option value="/" >Division</option>
-        </select>
-        <input type="number" id="Number2" placeholder="Enter Second Number" required><br><br>
-        <input type="number" id="ans" placeholder="Result..">
-    </body>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans|sans-sarif|Roboto|Montserrat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="backgroundImage"></div>
+    <div class="fullForm">
+        <div class="heading">
+            <label for="heading"><b>Your Project</b> </label>
+        </div>
+        <div class="formBody">
+            <form name="myForm">
+                <div class="name">
+                    <div class="firstName">
+                        <label for="firstName">First Name</label><br><input type="text" id="firstName" class="Input"
+                            style="width: 23.5vw;">
+                    </div>
+                    <div class="lastName">
+                        <label for="lastName">Last Name</label><br><input type="text" id="lastName" class="Input"
+                        style="width: 23.5vw;">
+                    </div>
+                </div>
+                <div class="headOfDiv">
+                    <label for="email">Your E-mail</label><br>
+                    <input type="email" id="email" class="Input" style="width: 50.5vw;">
+                </div>
+                <div class="headOfDiv">
+                    <label for="number">Your Number</label><br>
+                    <input type="number" id="number" class="Input" style="width: 50.5vw;">
+                </div>
+                <div class="headOfDiv">
+                    <label for="radioText">Select Your Gender</label><br>
+                    <label for="radioYes">Male</label><input type="radio" class="cheakbox" name="radio" value="Male">
+                    <label for="radioNo">Female</label><input type="radio" class="cheakbox" name="radio" value="Female">
+                </div>
+                <div class="headOfDiv">
+                    <label for="cheakboxText">Are You Complete Your Project?</label><br>
+                    <label for="cheakboxHTML">Yes</label><input type="checkbox"  id="cheakboxYes" 
+                        value="Yes" name="chea" class="cheakbox" required>
+                </div>
+                <div class="dropdown">
+                    <label for="dropdownText">What Is Your Division?</label><br>
+                    <select id="dropdown" class="Input">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="datepickerText">Your Project Submition Date.</label><br>
+                    <input type="date" class="Input" id="date">
+                </div>
+                <div class="dropdown">
+                    <label for="timeText">Your Project Submition Time.</label><br>
+                    <input type="time" class="Input" id="time">
+                </div>
+                <div class="dropdown">
+                    <label for="urlText">Your Project Url.</label><br>
+                    <input type="text" id="url" class="Input" style="width: 50.5vw;">
+                </div>
+                <div class="dropdown">
+                    <label for="fileText">Your Project Image.</label><br>
+                    <input type="file" id="file" class="Input">
+                </div><br>
+                <div class="submit">
+                    <button onclick="validateForm()" id="submitButton"><b>Submit</b></button>
+                </div>
+                <p id="demo"></p>
+            </form>
+        </div>
+    </div>
+    <div class="table">
+
+        <table>
+            <tr>
+                <th>Index No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email-id</th>
+                <th>Mobile Number</th>
+                <th>Complete Project</th>
+                <th>Language Use</th>
+                <th>Division</th>
+                <th>Date Of Submision</th>
+                <th>Time Of Submition</th>
+                <th>URL</th>
+                <th>File Of Submition</th>
+                <th>Edit</th>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td>abc</td>
+                <td><button>edit</button><button>Delet</button></td>
+            </tr>
+            
+        </table>
+        <div id="addDataHere">
+
+        </div>
+    </div>
+</body>
+
 </html>
